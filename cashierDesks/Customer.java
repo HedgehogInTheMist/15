@@ -1,11 +1,13 @@
 package cashierDesks;
 
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.concurrent.Semaphore;
 
 public class Customer extends Thread {
 
 	Semaphore semaphore;
+	Random random = new Random();
 	
 	private String name;
 	private ArrayList<String> listOfPurchase = new ArrayList<>();
@@ -31,10 +33,15 @@ public class Customer extends Thread {
 		semaphore.acquire();
 		//purchase operations. 
 		
-		System.out.println("Cu");
+		
+		//Thread.sleep(10); //Try to use random for value generation
+		Thread.sleep((random.nextInt(5) + 1) * 1000);
 		} catch(InterruptedException e) {
 			e.printStackTrace();
 		}
+		
+		System.out.println("Customer " + name + " left shop");
+		semaphore.release();
 	}
 	
 }
