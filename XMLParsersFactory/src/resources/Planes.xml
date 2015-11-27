@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Plane>
+	<Model name="СУ-24">
+		<Origin>USSR</Origin>
+		<Chars>
+			<Type>tactical bomber</Type>
+			<Crew>2</Crew>
+			<Passangers>0</Passangers>
+			<Radar>yes</Radar>
+			<Speed>1600 km/h</Speed>
+		</Chars>
+		<Parameters>
+			<Length>24,5 m</Length>
+			<Width>17,6 m</Width>
+			<Height>6,1 m</Height>
+		</Parameters>
+		<Price>50 millions</Price>
+	</Model>
+	<Model name="Airbus A320">
+		<Origin>France</Origin>
+		<Chars>
+			<Type>airliner</Type>
+			<Crew>2</Crew>
+			<Passangers>180</Passangers>
+			<Radar>yes</Radar>
+			<Speed>910</Speed>
+		</Chars>
+		<Parameters>
+			<Length>44,51 m</Length>
+			<Width>34,1 m</Width>
+			<Height>11,76 m</Height>
+		</Parameters>
+		<Price>110,1 millions</Price>
+	</Model>
+	
+	<Model name="F16 Fighting Falcon">
+		<Origin>USA</Origin>
+		<Chars>
+			<Type>multi-purpose fighter</Type>
+			<Crew>1</Crew>
+			<Passangers>0</Passangers>
+			<Radar>yes</Radar>
+			<Speed>2000 km/h</Speed>
+		</Chars>
+		<Parameters>
+			<Length>15,03 m</Length>
+			<Width>9,45 m</Width>
+			<Height>5,09 m</Height>
+		</Parameters>
+		<Price>50 millions</Price>
+	</Model>
+	
+</Plane>
